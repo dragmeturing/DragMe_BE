@@ -1,6 +1,6 @@
+from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource
 from api.models import Show
-from tastypie.authorization import Authorization
 
 class ShowResource(ModelResource):
     class Meta:
