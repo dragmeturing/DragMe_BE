@@ -97,5 +97,5 @@ This API is available in production at https://dragme-be.herokuapp.com/
       Sample Response:
         Status: 204 No Content              
 
-## Schema
+## Schema 
 ![Database Schema](schema.png)
