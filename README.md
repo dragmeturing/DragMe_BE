@@ -41,7 +41,7 @@ This API is available in production at https://dragme-be.herokuapp.com/
           }]
           }
 
-  #### GET https://dragme-be.herokuapp.com/api/show/1
+  #### GET https://dragme-be.herokuapp.com/api/show/1/
         Sample Response:
         {
           "date": "2019-07-14T15:16:38.643787",
@@ -73,6 +73,29 @@ This API is available in production at https://dragme-be.herokuapp.com/
 
       Sample Response:
         Status: 201 Created
+
+  #### PUT https://dragme-be.herokuapp.com/api/show/1/
+      Headers:
+        Content-Type: application/json
+        Accept: application/json
+
+      Body:
+      {
+        "name": "New Name",
+        "description": "New Description",
+        "event_url": "https://www.facebook.com/events/tracks-denver/drag-nation-dynasty-ft-rajah-ohara/488370791900023/",
+        "date": "2019-07-26 21:00:00",
+        "poster_url": "https://tickets.exdoevents.com/wp-content/uploads/2019/07/07_26_DragNation_11x17web.jpg",
+        "venue_name": "EXDO Event Center",
+        "venue_google_id": "1234556"
+      }
+
+      Sample Response:
+        Status: 204 No Content    
+
+  #### DELETE https://dragme-be.herokuapp.com/api/show/1/
+      Sample Response:
+        Status: 204 No Content              
 
 ## Schema
 ![Database Schema](schema.png)
