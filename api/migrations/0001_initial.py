@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Lineup',
+            name='Venue',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
             ],
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.AddField(
-            model_name='lineup',
+            model_name='Venue',
             name='show_id',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='api.Show'),
         ),
